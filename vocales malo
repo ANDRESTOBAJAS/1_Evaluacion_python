@@ -1,0 +1,18 @@
+def contador_vocales():
+  #leemos una palabra 
+  palabra=input("Dime una palabra: ")
+  #inicializamos la variable que almacenara el numero 3
+  numeroVocales=0
+  cont=0
+  #recorremos la palabra y buscamos las letras a
+  for cont in range(0,len(palabra)): 
+    if((palabra[cont])== "A" or palabra[cont]=="a")or(palabra[cont])== "E" or palabra[cont]=="e") 
+      or(palabra[cont])== "I" or palabra[cont]=="i") 
+      or(palabra[cont])== "O" or palabra[cont]=="o") 
+      or(palabra[cont])== "U" or palabra[cont]=="u")):
+      numeroVocales=numeroVocales+1
+  #mostramos el numero de aes contadas
+  print("La palabra "+palabra+" tiene "+str(numeroVocales)+" vocales ")
+
+contador_vocales()
+
