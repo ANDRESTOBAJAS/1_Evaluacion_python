@@ -1,0 +1,14 @@
+def contador_aes():
+  #leemos una palabra 
+  palabra=input("Dime una palabra: ")
+  #inicializamos la variable que almacenara el numero 3
+  numeroaes=0
+  #recorremos la palabra y buscamos las letras a
+  for cont in range(0,len(palabra)): 
+    if palabra[cont]== "A" or palabra[cont]=="a":
+      numeroaes=numeroaes+1  
+  #mostramos el numero de aes contadas
+  print("La palabra "+palabra+" tiene "+str(numeroaes)+" a ")
+
+contador_aes()
+  
