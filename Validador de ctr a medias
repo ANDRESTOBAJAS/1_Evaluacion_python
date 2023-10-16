@@ -1,0 +1,20 @@
+#Este programa lee una ctr y dice si es valida o no debido a los criterios
+#1. Mas de 8 caracteres
+#2. Tiene al menos una letra en mayuscula
+#3. Tiene al menos una letra en minuscula
+#4. Tiene al menos un numero
+#5. Tiene al menos un caracter especial
+#6. No tiene espacios en blanco
+
+def verificaContraseña():
+  contrasena=input("Ingrese una contraseña: ")
+  validez=True #DEfino una variable para decir si la ctr si es correcta
+  #La doy por correcta haste que se diga lo contrario
+  longitud=len(contrasena)
+  if(longitud<=8):
+    validez=False
+
+    #if contrasena[cont]=="a" or contrasena[0]=="b"  
+  if(contrasena.islower()) or (contrasena.isupper()):
+    valide=False
+  
