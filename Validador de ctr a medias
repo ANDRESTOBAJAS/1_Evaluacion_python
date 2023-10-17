@@ -6,16 +6,29 @@
 # 4.Al menos un número
 # 5.Al menos un carácter especial X
 # 6.No tiene espacios en blanco
+#FUNCIONES
+def verificaLongitud(contraseña):
+  longitud=len(contraseña)
+  respuesta=True
+  if(longitud<=8):
+    respuesta=False
+  return(respuesta)
 
+
+#Programa principal
 def verificaContraseña():
   contraseña=input("Ingrese una contraseña: ")
   validez=True #Defino una variable que me dice si es correcta
   #La doy por correcta mientras no se demuestre lo contrario
-  longitud=len(contraseña)
-  cont=0
-  if(longitud<=8):
-    validez=False
-    print("Longitud incorrecta")
+  verificaLongitud(contraseña)
+  verificaMayusculas(contraseña)
+  verificaMinusculas(contraseña)
+  verificaNumeros(contraseña)
+  verificaCaracteresExtraños(contraseña)
+ 
+ 
+ 
+ 
   if(contraseña.islower() or contraseña.isupper()):
     validez=False
     print("NO cumple el criterio de contener mayúsculas o minúsculas")
