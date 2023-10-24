@@ -12,25 +12,20 @@ def verificaLongitud(contraseña): #Verifica si la palabra tiene más de 8 carac
   respuesta=True
   if(longitud<=8):
     respuesta=False
-  #print("La longitud de la contraseña es "+str(longitud))
   return(respuesta)
 
 def verificaMayusculas(contraseña):# Verifica si la palabra contiene al menos 1 mayúscula
   respuesta=False
   for cont in range(0,len(contraseña)):
-    #print("Letra "+contraseña[cont])
     if(contraseña[cont].isupper()):
        respuesta=True
-       #print("He hecontrado una letra mayuscula  ")
   return(respuesta)
 
 def verificaMinusculas(contraseña):
   respuesta=False
   for cont in range(0,len(contraseña)):
-    print("Letra "+contraseña[cont])
     if(contraseña[cont].islower()):
       respuesta=True
-      print("He hecontrado una minuscula  ")
     return(respuesta)
 
 def verificaNumeros(contraseña):
@@ -38,7 +33,6 @@ def verificaNumeros(contraseña):
   for cont in range(0,len(contraseña)):
     if(contraseña[cont].isnumeric()):
       respuesta=True
-  return(respuesta)
   return(respuesta)
 
 def verificaCaracteresExtraños(contraseña):# Verifica si contiene alguno de los siguientes caracteres ! "" # $ % & ' ( #) * + , - . / : ; < = > ? @ [ \ ] ^ _` { | } ~"
@@ -49,15 +43,15 @@ def verificaCaracteresExtraños(contraseña):# Verifica si contiene alguno de lo
       if(contraseña[cont1]==lista[cont2]):#SI la letra coincide con alguno de los símbolos raros
         respuesta=True
   return(respuesta)
-
-
+   
+   
 
 
 
 
 #Programa principal
 def verificaContraseña():
-  contraseña=input("Introduce una contraseña: ")
+  contraseña=input("Introdu una contraseña: ")
   validez=0 #Defino una variable que me dice si es correcta
   #La doy por correcta mientras no se demuestre lo contrario
   if(verificaLongitud(contraseña)==True):
