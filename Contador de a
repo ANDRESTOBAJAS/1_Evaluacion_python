@@ -11,4 +11,25 @@ def contador_aes():
   print("La palabra "+palabra+" tiene "+str(numeroaes)+" a ")
 
 contador_aes()
+
+#Update
+def contador_aes():
+    # Leemos una palabra
+    palabra = input("Dime una palabra: ")
+    
+    # Inicializamos la variable que almacenará el número de 'a's
+    numero_aes = 0
+    
+    # Convertimos la palabra a minúsculas para contar ambas 'A' y 'a'
+    palabra = palabra.lower()
+    
+    # Recorremos la palabra y buscamos las letras 'a'
+    for letra in palabra:
+        if letra == 'a':
+            numero_aes += 1
+    
+    # Mostramos el número de 'a's contadas
+    print(f"La palabra '{palabra}' tiene {numero_aes} 'a's.")
+
+contador_aes()
   
